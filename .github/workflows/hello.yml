@@ -2,9 +2,9 @@ name: Hello Agile
 
 on:
   push:
-    branches: [ dev ]      # Runs only when you push to 'dev'
+    branches: [dev]      # Runs only when you push to 'dev'
   pull_request:
-    branches: [ main ]     # Runs when a PR targets 'main'
+    branches: [main]     # Runs when a PR targets 'main'
 
 jobs:
   say_hello:
@@ -12,43 +12,4 @@ jobs:
     steps:
       - name: Print Hello
         run: echo "Hello from GitHub Actions!"
-Agile
-
-on:
-  push:
-    branches: [ dev ]      # Runs only when you push to 'dev'
-  pull_request:
-    branches: [ main ]     # Runs when a PR targets 'main'
-
-jobs:
-  say_hello:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Print Hello
-        run: echo "Hello from GitHub Actions!"
-name: Hello Agile
-
-on: [push]
-
-jobs:
-  say_hello:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Print Hello
-        run: echo "Hello from GitHub Actions!"
-
-name: Hello Agile
-
-on:
-  push:
-    branches: [ dev ]      # Runs only when you push to 'dev'
-  pull_request:
-    branches: [ main ]     # Runs when a PR targets 'main'
-
-jobs:
-  say_hello:    runs-on: ubuntu-latest
-    steps:
-      - name: Print Hello
-        run: echo "Hello from GitHub Actions!"
-
 
